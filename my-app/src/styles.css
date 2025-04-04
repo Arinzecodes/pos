@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  flex-direction: column;
+}
+
+.receipt-container {
+  text-align: center;
+}
+
+.receipt {
+  width: 320px;
+  background: silver;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.receipt-header img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.receipt-header h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+.merchant-info {
+  margin-top: 10px;
+}
+
+.transaction-info {
+  text-align: left;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.large {
+  font-size: 18px;
+  color: #d9534f;
+}
+
+.qr-code {
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+hr {
+  border: 0.5px solid #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+  #receipt {
+      width: 300px;
+      max-width: 600px;
+      padding: 15px;
+      box-shadow: none;
+      position: relative;;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  button {
+      font-size: 12px;
+      padding: 8px;
+  }
+}
